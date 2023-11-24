@@ -275,4 +275,198 @@ The Standard User cannot compromise the security of the computer or the privacy 
 ###  In what type of situation would an IT administrator delete a user account and choose to keep the files of that user account instead of deleting them?
 The user account is an employee that is being terminated and the files contain required business information and should be retained.
 
-##
+## 11.2.5.8 Lab - Manage Virtual Memory
+### What is the current size of the virtual memory (paging file)?
+640 MB
+
+### What Drive [Volume Label] contains the paging file?
+C [Local Disk]:
+
+### What Drive [Volume Label] contains the paging file?
+ITE
+
+### Why would you ever change the default virtual memory page file settings in Windows?
+With a default installation, Windows creates the virtual memory page file in the root folder on the same drive, where the systems files are stored. Over time, this drive may run out of free space, which would cause system problems.
+
+## 11.2.6.2 Lab - Use Device Manager
+### What information is listed in the Device Manager window? Why would you use it?
+Device Manager lists all the hardware devices installed on your computer. Use the Device Manager to view and change the properties of any device.
+
+### Browse through the menus displayed at the top of the Device Manager window. Ho would you install driver software for an older device that may not be automatically recognized by the Windows operating system?
+Device Manager > Action tab > Add legacy hardware.
+
+### What additional information does Driver Details provide?
+filename of the driver and where it is located on the hard disk.
+
+### What two options do you have for updating the driver?
+You can search automatically, which will search the computer and internet for the latest driver software, or you can browse the computer’s file folders for a driver.
+
+### What does the Roll Back Driver button do? The Roll Back Driver can be grayed out on your computer, why would it be grayed out?
+It allows you to uninstall newly installed driver software and revert back to the driver that was used prior to a driver upgrade. The button is grayed out because a new driver has not been installed.
+
+### What are the other available options?
+The other options are disable device and uninstall devices.
+
+## 11.3.1.11 Lab - Monitor and Manage System Resources
+### b. In Notepad, click File > Print. Record a listed printer below. Note: You do not need to install a physical printer.
+Microsoft XPS
+
+### What message did you receive? How would you fix this?
+Before you can perform printer-related tasks such as page setup or printing a document, you need to install a printer. You will need to restart the print spooler.
+
+### When DHCP Client stops, what other services will also be stopped?
+P Helper, WinHTTP Web Proxy Auto-Discovery Service, Network List Service, and Network Location Awareness.
+
+### Why is it important to exercise care when managing services?
+Applications and other services may depend on a given service to work. Stopping a service can compromise the operation of other services.
+
+### What is the full path name to the example file name?
+C:\PerfLogs\DataCollectionName\DataCollector01.csv
+
+### What does the column farthest to the right show?
+Available memory in MBytes.
+
+## 11.3.2.7 Lab - System Utilities
+### What was the path you use to navigate to the Event Viewer?
+Your console > Management Tools > Computer Management > System Tools > Event Viewer
+
+### What is the color of the desktop?
+Red
+
+### What is the color of the desktop?
+Blue
+
+### Why would it be beneficial to add snap-ins to the mmc that are for other computers on the network?
+It would make it easy to configure and monitor other computers that do not have monitors, keyboards or mice, or that are not easily accessible.
+
+### After restarting the computer, why was the desktop color changed?
+Importing the registry file modified the registry to contain a value for the desktop that was not the same as the current value. When the computer started, this value was read from the registry to make the desktop that color.
+
+## 11.3.2.8 Lab - Manage System Files
+### What are the startup options?
+Normal startup, Diagnostic startup, or Selective startup.
+
+### Can you enable and disable services at this tab?
+Yes
+
+### What can you do in this tab?
+Launch Windows built-in utilities.
+
+### What does this tool report?
+Detailed information about the DirectX components and drivers installed on the system.
+
+### What information is listed on this page?
+Device, Drivers, and DirectX Features
+
+### What information is listed on this page?
+Device and Drivers
+
+### What information is listed on this page?
+A list of input devices
+
+### Why would it be beneficial to turn off a service in the system configuration?
+It may be beneficial to turn off a service if that service may have become unresponsive, or if a service is using too many resources.
+
+### When would you use the startup tab of the system configuration tool?
+here may be programs that you do not wish to start when the computer boots.
+
+## 11.4.1.5 Lab - Work in the Windows Command Shell
+### to see the next page, press the spacebar. What happens when you press enter?
+It only advances one line at a time.
+
+### How would you create these folders C:\Users\ITEUser\a\b\c if your current directory is C:\Users\ITEUser?
+C:\Users\ITEUser> md a\b\c.
+
+### What command would you use to verify the creation of the nested directories?
+The commands are dir to list the directory and chdir or cd to change directory.
+
+### What command did you use?
+C:\Users\ITEUser> cls.
+
+### What is the last command that you have used? Press Esc on the keyboard to exit the dialog box.
+It is cls to clear the screen.
+
+### What is the last command?
+It is cls to clear the screen.
+
+## 11.4.2.7 Lab - File System Commands
+### What is the current directory?
+directory C:\Users\ITEUser
+
+### Which folder are you in now?
+C:\Users\ITEUser\ITEfolder3
+
+### What command or commands did you use to create the nested folders?
+C:\Users\ITEUser\ITEfolder3> md ITEfolder4\ITEfolder5
+
+### After issuing the cd .. command, what is your directory now?
+C:\Users\ITEUser\ITEfolder3\ITEFolder4
+
+### What would be the current directory if you issue this command at C:\Users\ITEfolder4?
+C:\Users\ITEUser\ITEFolder3
+
+### What single command would you use to delete all the files with doc2 in the filename? Use the command to remove the files with doc2 in the filename.
+C:\Users\ITEUser\ITEfolder1> del doc2*
+
+### What command would you use to delete all the files in the directory? Use the command to remove the files.
+C:\Users\ITEUser\ITEfolder1> del *.*
+
+### What option allows you to copy all the files and directories, including the empty directories?
+The option is /E.
+
+### Were you able to delete the directory? Explain.
+You were not able to delete the directory because it was not empty.
+
+### What are the advantages of using CLI vs. GUI?
+the commands in the CLI in Windows have not changed in the different Windows versions. The GUI interfaces in different Windows versions have changed dramatically.
+
+## 11.4.3.2 Lab - Disk CLI Commands
+### What is the option to fix errors on the drive?
+/F
+
+### What is the option to force the volume to dismount first if necessary?
+/X
+
+### What is the option to locate bad sectors and recover readable information?
+/R
+
+### What happened? Explain.
+Access was denied because you do not have sufficient privileges.
+
+### What is the file system of the drive?
+The common file systems available in Windows are FAT, FAT32, and NTFS.
+
+### What option is used to determine the maximum number of bytes that the volume can be shrink by?
+QUERYMAX
+
+## 11.4.4.2 Lab - Task and System CLI Commands
+### What command would you use to display the results of tasklist one page at a time?
+The command would be tasklist | more.
+
+### What is the option to list the modules that are associated with a task?
+/M
+
+### What command would you use if you want to find all the tasks that use the module oleaut32.dll? List a few tasks that uses oleaut32.dll.
+The command is tasklist /M oleaut32.dll. Wildcard * can also be substituted for part of oleaut32.dll.
+
+### What command would you use to find out all the processes that have been running for more than 1 hour and 40 minutes?
+The command is tasklist /FI “cputime gt 01:40:00″.
+
+### What option would you use if you only wanted to scan the integrity of all the protected system files?
+/verifyonly
+
+### What would you add to the command so you can view the output one page at a time?
+Add | more to the end of the command; so the command becomes dism /online /get-drivers /all /format:table | more
+
+### Enter the command to log off your computer. Record the command below.
+C:\Windows\system32> shutdown /l
+
+### Record the command below. What warning message did you see?
+C:\Windows\system32> shutdown /s /t 30. Windows will shut down in 2 minutes.
+
+### What command would you use to abort the shutdown?
+C:\Windows\system32> shutdown /a
+
+## 11.4.5.3 Lab - Other Useful Commands
+### What is the local drive letter assigned to the connected resource?
+Y
